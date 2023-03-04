@@ -21,7 +21,7 @@ relay_manager.add_subscription_on_all_relays(subscription_id, filters)
 from pynostr.encrypted_dm import EncryptedDirectMessage
 from pynostr.key import PrivateKey, PublicKey
 private_key = PrivateKey()
-recipient_pubkey = PublicKey.from_npub("").hex()
+recipient_pubkey = PublicKey.from_npub("<insert the pub key you want to send to here>").hex()
 dm = EncryptedDirectMessage()
 dm.encrypt(private_key.hex(),
   recipient_pubkey=recipient_pubkey,
